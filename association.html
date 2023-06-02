@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 作者姓名 -->
+    <meta name="author" content="LiMengXiu" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 檢索與追蹤 -->
+    <meta name="robots" content="index,follow" />
+    <!-- 一般級網站 -->
+    <meta name="rating" content="General" />
+    <!-- 連結預設開在本頁 -->
+    <base target="_self" />
+    <!-- 網頁描述 -->
+    <meta name="description" content="" />
+    <title>西洋棋資訊網 | 國際象棋聯合會</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["冠軍國家", "奪冠比例"],
+          ["俄羅斯", 4],
+          ["亞美尼亞", 2],
+          ["保加利亞", 2],
+          ["以色列", 1],
+          ["烏克蘭", 1],
+          ["阿塞拜疆", 1],
+          ["印度", 1],
+        ]);
+
+        var options = {
+          title: "國際象棋世界杯（FIDE World Cup）冠軍分布圓餅圖",
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <h1>西洋棋資訊網</h1>
+        <h3>
+          西洋棋起源於印度，又名國際象棋是一種策略棋盤遊戲，以各種棋子不同的移動方式，將對方的國王逼入無法躲避的境地。
+        </h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">網站首頁</a></li>
+          <li><a href="./Contest.html">西洋棋錦標賽</a></li>
+          <li>
+            <a class="active" href="./association.html">國際象棋聯合會</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="federation">
+          <img src="./images/5.jpg" alt="世界國際象棋聯合會" />
+          <div class="info">
+            <p>
+              世界國際象棋聯合會（World Chess Federation），簡稱FIDE（Fédération
+              Internationale des
+              Échecs），是國際象棋的國際組織和管理機構。成立於1924年，總部位於瑞士洛桑。
+            </p>
+            <p>
+              FIDE的目標是促進、發展和管理國際象棋運動，以及推動國際象棋在全球範圍內的普及和推廣。作為國際象棋的官方機構，FIDE負責制定國際象棋的規則和標準，組織和管理國際象棋的比賽和錦標賽，頒發國際象棋大師和國際象棋特級大師等稱號，以及維護和更新國際象棋的等級和排名系統。
+            </p>
+            <p>
+              每年舉辦多個國際象棋比賽，其中最著名的是國際象棋世界錦標賽。此外，FIDE還組織各類國際象棋賽事，包括奧林匹克國際象棋團體比賽、世界杯國際象棋錦標賽、候選人賽等。這些比賽吸引了世界上頂級的國際象棋選手參與，為國際象棋愛好者提供了觀賞和學習的機會。
+            </p>
+            <p>
+              致力於將國際象棋作為一項全球性的智力運動，通過推廣國際象棋的教育項目和活動，培養新一代的國際象棋選手和愛好者。FIDE還積極與國際奧林匹克委員會合作，爭取將國際象棋納入奧運會項目。
+            </p>
+            <p>旗下組織有：</p>
+            <ul>
+              <li>
+                國際象棋奧林匹克委員會（FIDE Chess Olympiad
+                Committee）：負責組織和管理國際象棋奧林匹克團體比賽，是世界上最重要的國際象棋團體比賽之一。
+              </li>
+              <li>
+                國際象棋裁判委員會（FIDE Arbiters'
+                Commission）：負責培訓和認證國際象棋裁判員，並確保比賽的公正和規範。
+              </li>
+              <li>
+                國際象棋教育委員會（FIDE Chess in Education
+                Commission）：致力於將國際象棋引入教育系統，並推廣國際象棋作為教育工具的潛力。
+              </li>
+              <li>
+                國際象棋手冊委員會（FIDE Chess Informatics
+                Commission）：負責維護和更新國際象棋規則手冊，確保規則的準確和一致性。
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="competition">
+          <div class="text">
+            <h3>國際象棋世界杯</h3>
+            <p>
+              國際象棋世界杯（FIDE World
+              Cup）是由國際象棋聯合會（FIDE）主辦的一項重要國際象棋比賽。該比賽的目的是確定參加世界象棋錦標賽（World
+              Chess
+              Championship）的挑戰者。世界杯是國際象棋界最具權威和高水平的比賽之一，吸引了世界各地頂尖棋手的參與。
+            </p>
+
+            <p>
+              以下是國際象棋世界杯（FIDE World
+              Cup）比賽歷年來的冠軍國籍以及每個國家在冠軍中所占的比例（截至2021年）：
+            </p>
+            <br />
+            <ul>
+              <li>俄羅斯：4次冠軍</li>
+              <li>亞美尼亞：2次冠軍</li>
+              <li>保加利亞：2次冠軍</li>
+              <li>以色列：1次冠軍</li>
+              <li>烏克蘭：1次冠軍</li>
+              <li>阿塞拜疆：1次冠軍</li>
+              <li>印度：1次冠軍</li>
+            </ul>
+          </div>
+          <div id="piechart"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      color="0,0,0"
+      opacity="0.3"
+      zIndex="-2"
+      count="99"
+      src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+      integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
